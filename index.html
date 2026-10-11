@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'">
+  <title>Telegram Crew</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="eyebrow">Windows · Cursor · Telegram</p>
+      <h1>Telegram Crew</h1>
+    </div>
+    <div class="top-actions">
+      <span id="run-state" class="pill">остановлено</span>
+      <button id="power" class="primary" type="button">Запустить</button>
+    </div>
+  </header>
+  <p class="notice">Публичная демонстрация интерфейса. Ключ Cursor и токены Telegram-ботов здесь не вводятся, не сохраняются и не отправляются. Рабочие ключи остаются только в локальном приложении Windows.</p>
+  <nav class="tabs" aria-label="Разделы">
+    <button type="button" data-tab="roles" class="active">Роли</button>
+    <button type="button" data-tab="skills">Скиллы</button>
+    <button type="button" data-tab="group">Группа</button>
+    <button type="button" data-tab="journal">Журнал</button>
+  </nav>
+  <main id="view"></main>
+  <dialog id="editor">
+    <form id="editor-form"></form>
+  </dialog>
+  <script src="seed.js"></script>
+  <script src="demo.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
